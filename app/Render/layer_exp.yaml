@@ -1,0 +1,65 @@
+exp_name: Layer_exp_scatter_boundary
+
+# model related
+model:
+  name: 'Multi_Layer_Dscatter_Model'
+  in_channels: 5
+  out_channels: 1
+  resnet: True
+  norm_type: 'Group'
+  mid_act: 'leaky'
+  out_act: 'sigmoid'
+  out_clip: False 
+  optimizer: 'Adam'
+  weight_decay: 4e-5
+  beta1: 0.9
+  lens: 71
+  gpu_occlusion: True
+
+  l1: 0.5
+  ssim: 0.0
+  grad: 0.0
+  regu: 0.5
+
+  hssim: 10.0
+  ssim_list:
+    - 3
+    - 5
+    - 11
+    - 21
+    - 31
+
+  layer_l1: 0.0
+  delta_layer_total: 0.0
+
+dataset:
+  name: 'Layer_Dataset_Synthetic'
+  csv: 'Dataset/DScatter_Data/dscatter_train_meta.csv'
+  hdf5: 'Dataset/DScatter_Data/train/dataset.hdf5'
+
+  csv: 'Dataset/DScatter_Data2/dscatter_train_meta.csv'
+  hdf5: 'Dataset/DScatter_Data2/train/dataset.hdf5'
+
+  use_256: True
+
+
+# training related
+hyper_params:
+  lr: 2e-4
+  epochs: 100000
+  workers: 22
+  batch_size: 22
+  save_epoch: 10
+
+  # visualization
+  vis_iter: 5     # iteration for visualization
+  save_iter: 50
+  n_cols: 5
+  gpus:
+    - 0
+
+  autograd_detect: False
+  default_folder: 'weights'
+  weight_file: 'latest'
+  resume: False 
+  # resume: True 
