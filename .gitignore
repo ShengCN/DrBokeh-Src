@@ -1,2 +1,7 @@
 __pycache__
 **/__pycache__
+*.pt
+*.ckpt
+*.pth
+.ipynb_checkpoints/
+**/.ipynb_checkpoints
