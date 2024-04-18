@@ -1,0 +1,3 @@
+- model.path=/home/sheng30/Documents/Research/Bokeh/app/Paper/Inpainting/lama/big-lama
+- indir=/home/sheng30/Documents/Research/Bokeh/app/Paper/Inpainting/lama/LaMa_test_images
+- outdir=/home/sheng30/Documents/Research/Bokeh/app/Paper/Inpainting/lama/output
