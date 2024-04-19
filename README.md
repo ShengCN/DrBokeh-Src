@@ -108,6 +108,9 @@ python app/Render/Inference.py --rgb $file --alpha $alpha --disp $disp --K 30.0 
 
 It renders bokeh result for one RGB image. It further shows how to use your own alpha/disp as inputs. Note, alpha assumes RGBD input with alpha map in the last channel. disp assumes you save your depth in a compressed npz format with `data` as the key. Details can be found in the code.
 
+You can try to use different alpha inputs provided in the Imgs to see the result difference. 
+
+
 Other rendering parameters also affect the results/performances. Here is the list of parameters for ``Inference.py``
 
 ```bash
