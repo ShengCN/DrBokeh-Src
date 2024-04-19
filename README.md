@@ -22,7 +22,7 @@ First make sure you have ``nvcc==11.7`` installed. Other cuda version should als
 Run the following bash to setup environment.
 
 ```bash
-conda create -n drbokeh py39 
+conda create -n drbokeh py39  -y
 conda activate py39
 
 bash env.sh
