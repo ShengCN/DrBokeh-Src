@@ -1,6 +1,6 @@
 # Dr. Bokeh: DiffeRentiable Occlusion-aware Bokeh Rendering
 
-This is the source code ([[**Bokeh Render**](#Render)], [[**Depth-from-Defocus**](Depth-from-Defocus)]) for Dr. Bokeh.
+This is the source code ([[**Bokeh Render**](#render)], [[**Depth-from-Defocus**](#depth-from-defocus)]) for Dr. Bokeh.
 
 ## Updates
 -  [-] Src for Bokeh Render Demo   
@@ -8,15 +8,13 @@ This is the source code ([[**Bokeh Render**](#Render)], [[**Depth-from-Defocus**
 	- [x] Salient Detection Model  
 	- [x] Inpainting model   
 	- [x] Render demo 
-	- [-] Documentation 
+	- [x] Documentation 
+	- [ ] Docker image
 
 -  [ ] Differentiable for depth-from-defocus   
 	- [ ] Compile the Dr.Bokeh
 	- [ ] Demo of differentiable of one pair 
 	- [ ] Demo of differentiable of a dataset
-
-- [ ] Colab? 
-- [ ] Docker image is needed
 
 ## Environment prerequisite 
 First make sure you have ``nvcc==11.7`` installed. Other cuda version should also be OK, but not fully be tested.
