@@ -67,17 +67,16 @@ We provide two scripts to illustrate how to use provided rendering scripts: ``sc
 ```bash
 #!/bin/bash
 
-# Define an array of files
+# Input RGBs
 files=("Imgs/00000.png" "Imgs/00003.png" "Imgs/00007.png" "Imgs/00012.png" "Imgs/00017.png" "Imgs/00019.png" "Imgs/00022.png")
 
-# Define an array of parameters
+# focal plane parameters 
 focals=(0.2 0.8)
 
 # Loop over each file
 for file in "${files[@]}"; do
     # Loop over each parameter
     for focal in "${focals[@]}"; do
-        # Execute a Python script with the current file and parameter
         echo "Running DrBokeh with file $file and param $focal"
 		fbasename=$(basename "$file")
 		fbasename_wo_ext="${fbasename%.*}"
