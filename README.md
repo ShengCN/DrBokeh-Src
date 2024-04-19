@@ -16,6 +16,8 @@ This is the source code ([[**Bokeh Render**](#render)], [[**Depth-from-Defocus**
 	- [ ] Demo of differentiable of one pair 
 	- [ ] Demo of differentiable of a dataset
 
+- [ ] (**Important**) Record a video to explain the paper and code details. 
+
 ## Environment prerequisite 
 First make sure you have ``nvcc==11.7`` installed. Other cuda version should also be OK, but not fully be tested.
 
@@ -24,7 +26,6 @@ Run the following bash to setup environment.
 ```bash
 conda create -n drbokeh py39  -y
 conda activate py39
-
 bash env.sh
 ```
 
