@@ -1,5 +1,5 @@
 #!/bin/bash
-id=00044
+id=00007
 file=Imgs/$id.png
 alpha=Imgs/$id-alpha.png
 alpha=Imgs/$id-alpha2.png
