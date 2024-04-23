@@ -106,7 +106,7 @@ focal=0.8
 python app/Render/Inference.py --rgb $file --alpha $alpha --disp $disp --K 30.0 --focal $focal --ofile outputs/$fbasename_wo_ext-focal-$focal.png --verbose --lens 71 --gamma 2.2
 ```
 
-It renders bokeh result for one RGB image. It further shows how to use your own alpha/disp as inputs. Note, alpha assumes RGBD input with alpha map in the last channel. disp assumes you save your depth in a compressed npz format with `data` as the key. Details can be found in the code.
+It renders bokeh result for one RGB image. It further shows how to use your own alpha/disp as inputs. Note, alpha assumes RGBA input with alpha map in the last channel. disp assumes you save your depth in a compressed npz format with `data` as the key. Details can be found in the code.
 You can try to use different alpha inputs provided in the Imgs to see the result difference. 
 
 
